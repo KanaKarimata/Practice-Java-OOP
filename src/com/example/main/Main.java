@@ -2,6 +2,7 @@ package com.example.main;
 import com.example.hero.Hero;
 import com.example.matango.Matango;
 import com.example.cleric.Crelic;
+import com.example.wizard.Wizard;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,7 +21,12 @@ public class Main {
         Crelic c1 = new Crelic();
         c1.name = "Lolo";
 
+        Wizard w = new Wizard();
+        w.name = "Rara";
+        w.hp = 50;
+
         h.slip();
+        w.heal(h);
         c1.selfAid();
         c1.pray(5);
         m1.run();
