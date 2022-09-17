@@ -1,8 +1,8 @@
 package com.example.hero;
 
 public class Hero {
-    String name;
-    int hp;
+    public String name;
+    public int hp;
 
     public void sleep() {
         this.hp = 100;
