@@ -27,4 +27,15 @@ public class Hero {
         System.out.println("最終HPは、" + this.hp + "でした");
     }
 
+    public Hero(String name) {
+        this.hp = 100;
+        this.name = name; //引数の値でnameフィールドを初期化
+    }
+
+    public Hero() {
+//        this.hp = 100;
+//        this.name = "ダミー";
+        this("ダミー");
+    }
+
 }
